@@ -1,7 +1,7 @@
 import React from 'react';
 export default function Navbar() {
     return(
-        <div className='flex flex-nowrap justify-between  p-5 h-fit bg-transparent'>
+        <div className='w-full flex flex-nowrap justify-between fixed backdrop-blur-md p-5 h-fit bg-transparent z-10'>
             <div>
                 <h1>hey</h1>
             </div>
