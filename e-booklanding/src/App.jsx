@@ -4,6 +4,7 @@ import './App.css'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import CardSection from './components/CardSection'
+import Phoneshow from './components/Phoneshow'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -13,6 +14,7 @@ function App() {
       <Navbar />
       <Hero />
       <CardSection />
+      <Phoneshow />
     </div>
   )
 }
