@@ -5,6 +5,7 @@ import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import CardSection from './components/CardSection'
 import Phoneshow from './components/Phoneshow'
+import Carrosel from './components/Carrosel'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -15,6 +16,7 @@ function App() {
       <Hero />
       <CardSection />
       <Phoneshow />
+      <Carrosel />
     </div>
   )
 }
