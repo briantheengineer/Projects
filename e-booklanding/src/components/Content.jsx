@@ -1,23 +1,18 @@
 import React from "react";
 export default function Content () {
     return (
-        <div className="h-screen mt-5 text-center flex justify-center items-center">
+        <div className="h-max text-center flex justify-center items-center">
             <div className="border p-5 w-full h-full">
                 <h1 className="text-3xl mb-5">Explore nossa Biblioteca</h1>
-                <div className="w-full h-full flex flex-nowrap">
-                   <div className="w-1/3 border h-[90%] rounded-2xl mx-2">
-                    <h1>Sono</h1>
-                    <p>Texto</p>
+                <div className="w-full h-full flex flex-nowrap justify-center p-5">
+                   <div className="w-4/6 border h-full rounded-2xl mx-2 overflow-hidden" 
+                   style={{ backgroundImage: "url('/svgs/blurry.svg')" }}>
+                    <h1>asdasda</h1>
+                   </div>
+                   <div className="w-4/6 border h-fit rounded-2xl mx-2 overflow-hidden">
                     <img></img>
                    </div>
-                   <div className="w-1/3 border h-[90%] rounded-2xl mx-2">
-                    <h1>Sono</h1>
-                    <p>Texto</p>
-                    <img></img>
-                   </div>
-                   <div className="w-1/3 border h-[90%] rounded-2xl mx-2">
-                    <h1>Sono</h1>
-                    <p>Texto</p>
+                   <div className="w-4/6 border h-fit rounded-2xl mx-2 overflow-hidden">
                     <img></img>
                    </div>
 
