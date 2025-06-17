@@ -11,24 +11,26 @@
 
 @font-face {
     font-family: 'BarlowCondensedBold';
-    src: url('/fonts/BarlowCondensedBold.ttf') format('truetype');
-    font-weight: bold;
+    src: url('/fonts/BarlowCondensed-Bold.ttf') format('truetype');
+    font-weight: 100;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'BarlowCondensedBlack';
-    src: url('/fonts/BarlowCondensed-Black.ttg') format('truetype');
+    src: url('/fonts/BarlowCondensed-Black.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 1000;
 }
 
-.barlowcondensedregular {
+.bcregular {
   font-family: 'BarlowCondensedRegular', sans-serif;
 }
 
-.barlowcondensedbold {
+.bcbold {
     font-family: 'BarlowCondensedBold', sans-serif;
 }
 
-.barlowcondensedblack{
+.bcblack{
     font-family: 'BarlowCondensedBlack', sans-serif;
 }
