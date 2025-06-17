@@ -4,11 +4,11 @@ import Phone from "../images/phone-mockup.png";
 export default function Hero() {
   return (
     <div
-      className="w-full h-screen bg-no-repeat bg-cover bg-center border-b relative flex flex-wrap"
+      className="w-full h-screen bg-no-repeat bg-cover bg-center relative flex flex-wrap"
       style={{ backgroundImage: "url('/svgs/blurry.svg')" }}
     >
       <div className="flex h-full px-10 md:px-20 justify-between flex-wrap">
-        <div className="flex flex-col justify-center items-center max-w-2/5 text-white border">
+        <div className="flex flex-col justify-center items-center max-w-2/5 text-white ">
           <h1 className="text-6xl bcblack font-bold my-4">
             Foco, calma e produtividade — na palma da sua mão.
           </h1>
@@ -20,7 +20,7 @@ export default function Hero() {
           </button>
         </div>
 
-        <div className="max-w-3/6 flex items-center justify-center border">
+        <div className="max-w-3/6 flex items-center justify-center">
           <img className="object-contain" src={Phone} alt="Phone mockup" />
         </div>
       </div>

@@ -2,11 +2,11 @@ import React from "react";
 
 export default function Content() {
   return (
-    <div className="h-screen text-center flex justify-center items-center">
-      <div className="border p-5 w-full h-full">
-        <h1 className="text-4xl bcblack mb-5 font-bold">Explore nossa Biblioteca</h1>
+    <div className="min-h-screen text-center flex justify-center items-center">
+      <div className="p-5 w-full h-full">
+        <h1 className="text-6xl bcblack mb-5 myblack ">Explore nossa Biblioteca</h1>
 
-        <div className="w-full h-full flex lg:flex-nowrap sm:flex-wrap justify-center p-5 gap-4">
+        <div className="w-full h-screen flex lg:flex-nowrap sm:flex-wrap justify-center p-5 gap-4">
           <div
             className="w-[30%] min-w-80 h-[95%] border rounded-2xl p-6 text-white flex flex-col items-center justify-start"
             style={{ backgroundImage: "url('/svgs/low-poly-grid-haikei.svg')", backgroundSize: 'cover', backgroundPosition: 'center' }}

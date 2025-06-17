@@ -6,19 +6,22 @@ import Frida from '../images/Frida.png';
 import Jorge from '../images/Jorge.png';
 import Mateus from '../images/Mateus.png';
 import Samanta from '../images/Samanta.png';
+import Linda from '../images/Linda.png';
+import Sharon from '../images/Sharon.png'
 
 import 'swiper/css';
 import 'swiper/css/navigation';
 
 const cards = [
-  { id: '1', name: 'Caio', text: 'Texto do Caio', picture: Caio },
-  { id: '2', name: 'Frida', text: 'Texto da Frida', picture: Frida },
-  { id: '3', name: 'Jorge', text: 'Texto do Jorge', picture: Jorge },
-  { id: '4', name: 'Mateus', text: 'Texto do Mateus', picture: Mateus },
-  { id: '5', name: 'Carlos', text: 'Texto do Carlos', picture: 'https://via.placeholder.com/150' },
-  { id: '6', name: 'Lucia', text: 'Texto da Lucia', picture: 'https://via.placeholder.com/150' },
-  { id: '7', name: 'Renato', text: 'Texto do Renato', picture: 'https://via.placeholder.com/150' },
+  { id: '1', name: 'Caio', text: 'Com a Calmaria, consegui focar nos estudos sem me sentir sobrecarregado. É como ter um respiro no meio do caos.',time:'5 meses' , picture: Caio },
+  { id: '2', name: 'Frida', text: 'As sessões de meditação me ajudam a começar o dia com clareza. Virou meu ritual matinal.',time:'2 anos', picture: Frida },
+  { id: '3', name: 'Mateus', text: 'Nunca consegui seguir a técnica Pomodoro, mas com a Calmaria ficou fácil e até gostoso focar.', time:'1 ano' , picture: Mateus },
+  { id: '4', name: 'Samanta', text: 'Uso a Calmaria pra pausar entre uma tarefa e outra. Me sinto muito mais leve e produtiva.',time:'8 meses' , picture: Samanta },
+  { id: '5', name: 'Jorge', text: 'Reduzi minha ansiedade no trabalho com poucos minutos por dia. Funciona mesmo.',time:'3 semanas' , picture: Jorge },
+  { id: '6', name: 'Sharon', text: 'Estava sempre exausta. Agora consigo organizar meu tempo sem me esgotar. Calmaria virou essencial.',time:'1 mês' , picture: Sharon },
+  { id: '7', name: 'Linda', text: 'Achei que meditação não era pra mim, mas esse app mudou minha visão. Hoje, não fico sem.',time:'4 meses' , picture: Linda },
 ];
+
 
 const Carro = () => {
   return (
@@ -33,18 +36,26 @@ const Carro = () => {
       >
         {cards.map((card) => (
           <SwiperSlide key={card.id}>
-            <div className="bg-white p-4 rounded-lg shadow text-center border h-80 flex flex-col items-center justify-between">
-              <div>
-                <h3 className="font-bold text-lg">{card.name}</h3>
-                <p className="text-sm text-gray-600">{card.text}</p>
+            <div className="bg-white p-6 rounded-2xl shadow-md text-left h-72 flex flex-col justify-between">
+              <div className="flex items-start gap-4">
+                <div className="h-20 w-20 rounded-full overflow-hidden border-2 flex-shrink-0">
+                  <img
+                    src={card.picture}
+                    alt={card.name}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div>
+                  <h3 className="font-semibold text-xl mb-2">{card.name}</h3>
+                  <p className="text-gray-700 leading-relaxed text-base">
+                    {card.text}
+                  </p>
+                </div>
               </div>
-              <div className="rounded-xl h-40 w-40 overflow-hidden border-2 sugo-font">
-                <img
-                  src={card.picture}
-                  alt={card.name}
-                  className="w-full h-full object-cover"
-                />
-              </div>
+
+              <p className="text-sm text-gray-500 text-center mt-4">
+                Usuário do Calmaria há <span className="font-medium">{card.time}</span>
+              </p>
             </div>
           </SwiperSlide>
         ))}
@@ -53,11 +64,12 @@ const Carro = () => {
   );
 };
 
+
 export default function Carrosel() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-gray-50">
       <div className="text-center text-4xl font-semibold mb-10">
-        <h1>
+        <h1 className='bcblack text-6xl myblack'>
           Nossos clientes vivem a vida <br /> mais tranquilos e mais felizes
         </h1>
       </div>
