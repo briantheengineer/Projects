@@ -38,7 +38,7 @@ const Carro = () => {
                 <h3 className="font-bold text-lg">{card.name}</h3>
                 <p className="text-sm text-gray-600">{card.text}</p>
               </div>
-              <div className="rounded-xl h-40 w-40 overflow-hidden border-2">
+              <div className="rounded-xl h-40 w-40 overflow-hidden border-2 sugo-font">
                 <img
                   src={card.picture}
                   alt={card.name}
